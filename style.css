@@ -1,0 +1,367 @@
+html, body{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#article_links{
+    font-family: verdana;
+    font-size: 14px;
+    line-height: 20px;    font-weight: bold;
+    color: black;
+}
+header{
+    background-image: url("TwitchBackground.jpg");
+    background-position: center;
+    padding: 20px;
+    height: 100px;
+}
+#name{
+    font-family: Verdana;
+    color: white;
+    font-weight: 200;
+    font-size: 65px;
+    -webkit-text-stroke: 2px black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15%;
+}
+#title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 22px;
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15%;
+}
+.nav_container{
+    height: 60px;
+    background-color: rgb(233,233,233);
+    border-top: 2px solid rgb(97, 97, 97);
+    border-bottom: 2px solid rgb(97, 97, 97);
+}
+.nav_menu{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    height: 60px;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding:0;
+    list-style: none;
+    text-align: center;      
+}
+.nav_links{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav_links:hover{
+    text-decoration: underline;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-auto-rows: minmax(50px, auto);
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.bio_background{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#avatar{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+.avatar{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.bio{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#bio{
+    text-align: LEFT;
+    font-family: verdana;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    font-size: 35PX;
+    margin-left: 20%;
+
+}
+.bio_text{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#bio_text{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: verdana;
+    font-size: 14px;
+    line-height: 20px;
+}
+.videos{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end:11;
+    background-color: #ebebeb;
+    margin-left: -21.4%;
+    margin-right: -21.4%;
+}
+.videos_title{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+#section_title{
+    
+    font-family: verdana;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    font-size: 35PX;
+}
+.video1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+#video1{
+    max-width: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.video2{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    margin-left: 0%;
+}
+#video2{
+    max-width: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.video1_text{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    margin-right: 25%;
+    margin-left: 0%;  
+}
+.video2_text{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 9;
+    margin-right: 25%;
+}
+#copy_text{
+    font-family: verdana;
+    font-size: 14px;
+    line-height: 20px;
+}
+.articles{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end:19;
+    background-color: white;
+    margin-left: -21.4%;
+    margin-right: -21.4%;
+}
+.article_title{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 12;
+    grid-row-end: 13;
+}
+.article_img{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+#article_img{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+}
+.article_text{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    margin-right: 20%;
+}
+#article_copy_text{
+    font-family: verdana;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10%;
+}
+.voicemeeter_img{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 16;
+    grid-row-end: 17; 
+    margin-left: 10%;  
+    margin-right: 20%; 
+}
+#voicemeeter_img{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+}
+.voicemeeter_text{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 16;
+    grid-row-end: 17; 
+    margin-left: 0%;  
+    margin-right: 20%; 
+}
+.contact_background{
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 19;
+    grid-row-end:26;
+    background-color: #ebebeb;
+    margin-left: -21.4%;
+    margin-right: -21.4%;
+}
+.contact_img{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 21;
+    grid-row-end: 22;
+    display: flex;
+}
+#contact_img{
+    border: 1px solid black;
+    border-radius: 50%;
+    max-width: 35%;
+}
+.socials{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 23;
+    grid-row-end: 24;
+    margin-left: 30%;
+}
+#icons{
+    padding: 5px;
+    max-width: 40px;
+}
+.contact_form{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 21;
+    grid-row-end: 22;
+    margin-top: 0%;
+}
+#form_labels{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+#fname{
+    width: 50%;
+    height: 8%;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+#lname{
+    width: 50%;
+    height: 8%;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+#email{
+    width: 50%;
+    height: 8%;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+#message{
+    border: 1px solid black;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+#submit{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    width: 20%;
+    height: 10%;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+#top_btn:hover {
+    background-color: #555;
+}
+#top_btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    width: 55px;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+#footer{
+    background-image: url("TwitchBackground.jpg");
+    background-position: center;
+    padding: 20px;
+    height: 200px;
+}
+#copyright{
+    text-align: left;
+    vertical-align: text-bottom;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
